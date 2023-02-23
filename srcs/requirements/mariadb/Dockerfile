@@ -1,5 +1,6 @@
 FROM debian:buster
 
+#this exposes the port only to the other docker containers, but not to host
 EXPOSE 3306
 
 ARG DB_NAME=${DB_NAME}
